@@ -35,7 +35,7 @@ public class Filter_BinMorph_Free implements PlugInFilter {
 	}
 
     public int setup(String arg, ImagePlus imp) {
-        if (arg.equals("about")) {
+        if ("about".equals(arg)) {
             showAbout();
             return DONE;
         }
