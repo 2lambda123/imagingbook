@@ -29,7 +29,7 @@ public class Filter_UnsharpMask implements PlugInFilter {
 	private static double amount = 100; //"amount" of sharpening in percent
 
 	public int setup(String arg, ImagePlus imp) {
-		if (arg.equals("about")) {
+		if ("about".equals(arg)) {
 			showAbout();
 			return DONE;
 		}

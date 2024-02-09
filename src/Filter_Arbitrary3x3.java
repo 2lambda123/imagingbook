@@ -16,7 +16,7 @@ import ij.process.*;
 public class Filter_Arbitrary3x3 implements PlugInFilter {
 
     public int setup(String arg, ImagePlus imp) {
-        if (arg.equals("about")) {
+        if ("about".equals(arg)) {
             showAbout();
             return DONE;
         }

@@ -19,7 +19,7 @@ public class Filter_Median3x3 implements PlugInFilter {
 	final int K = 4;
 
     public int setup(String arg, ImagePlus imp) {
-        if (arg.equals("about")) {
+        if ("about".equals(arg)) {
             showAbout();
             return DONE;
         }
